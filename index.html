@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bài tập Js buổi 4</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <br>
+        <!-- Bài tập 1 -->
+        <div class="form-group">
+            <h1 class="mb-4 mt-4">Bài tập 1 :</h1>
+            <h3>Xuất 3 số theo thứ tự tăng dần</h3>
+            <form class="mt-3">
+                <div class="row">
+                    <div class="col">
+                        <h6>Số thứ 1</h6>
+                        <input id="soThu1" class="form-control" placeholder="Nhập số thứ 1">
+                    </div>
+                    <div class="col">
+                        <h6>Số thứ 2</h6>
+                        <input id="soThu2" class="form-control" placeholder="Nhập số thứ 2">
+                    </div>
+                    <div class="col">
+                        <h6>Số thứ 3</h6>
+                        <input id="soThu3" class="form-control" placeholder="Nhập số thứ 3">
+                    </div>
+                </div>
+            </form>
+            <button id="btnKetqua" class="btn btn-success bg-secondary mb-4 mt-3">Sắp xếp</button>
+            <div class="mt-2 alert alert-secondary">
+                Kết quả : <span id="ketqua"></span>
+            </div>
+        </div>
+        <!-- Bài tập 2 -->
+        <div class="dropdown mt-5">
+            <h1 class="mb-4 mt-4">Bài tập 2 :</h1>
+
+            <h3>Chương trình "Chào hỏi"</h3>
+            <select id="giadinh" style="padding: 7px;border-radius: 4px; background-color: rgba(60, 135, 139, 0.785); font-size: 18px;">
+                <option value="nguoila">Chọn thành viên</option>
+                <option value="Bo">Bố</option>
+                <option value="Me">Mẹ</option>
+                <option value="At">Anh trai</option>
+                <option value="Eg">Em gái</option>
+            </select>
+            <button id="btnHello" class="btn btn-success bg-secondary mb-4 mt-3" style="margin-left: 100px;">Gửi lời chào</button>
+            <div class="mt-2 alert alert-secondary">
+                Xin chào<span id="xinchao"></span>
+            </div>
+        </div>
+        <!-- Bài tập 3 -->
+        <div class="form-group">
+            <h1 class="mb-4 mt-4">Bài tập 3 :</h1>
+            <h3>Đếm số chẵn lẻ</h3>
+            <form class="mt-3">
+                <div class="row">
+                    <div class="col">
+                        <h6>Số thứ 1</h6>
+                        <input id="soThunhat" class="form-control" placeholder="Nhập số thứ 1">
+                    </div>
+                    <div class="col">
+                        <h6>Số thứ 2</h6>
+                        <input id="soThuhai" class="form-control" placeholder="Nhập số thứ 2">
+                    </div>
+                    <div class="col">
+                        <h6>Số thứ 3</h6>
+                        <input id="soThuba" class="form-control" placeholder="Nhập số thứ 3">
+                    </div>
+                </div>
+            </form>
+            <button id="btnDem" class="btn btn-success bg-secondary mb-4 mt-3">Đếm</button>
+            <div class="mt-2 alert alert-secondary">
+                Kết quả : <span id="ketqua2"></span>
+            </div>
+        </div>
+        <!-- Bài tập 4 -->
+        <div class="form-group">
+            <h1 class="mb-4 mt-4">Bài tập 4 :</h1>
+
+            <h3>Đoán hình tam giác</h3>
+            <form class="mt-3">
+                <div class="row">
+                    <div class="col">
+                        <h6>Độ dài cạnh 1</h6>
+                        <input id="canh1" class="form-control" placeholder="Nhập độ dài cạnh 1">
+                    </div>
+                    <div class="col">
+                        <h6>Độ dài cạnh 2</h6>
+                        <input id="canh2" class="form-control" placeholder="Nhập độ dài cạnh 2">
+                    </div>
+                    <div class="col">
+                        <h6>Độ dài cạnh 3</h6>
+                        <input id="canh3" class="form-control" placeholder="Nhập độ dài cạnh 3">
+                    </div>
+                </div>
+            </form>
+            <button id="btnDem2" class="btn btn-success bg-secondary mb-4 mt-3">Dự đoán</button>
+            <div class="mt-2 alert alert-secondary mb-5">
+                Kết quả : <span id="ketqua3"></span>
+            </div>
+        </div>
+
+
+
+    </div>
+    <script src="./index.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
